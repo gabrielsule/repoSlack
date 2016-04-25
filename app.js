@@ -6,7 +6,7 @@ var controller = Botkit.slackbot({
 });
 
 controller.spawn({
-    token: 'xoxb-30205149072-WmnmK8u29zsAYbUCojMvUWaX'
+    token: 'xoxb-xxxxxxxxxxxxxxxxx'
 }).startRTM(function (err) {
     if (err) {
         throw new Error(err);
@@ -25,7 +25,7 @@ controller.hears('dummy (.*) (.*)', ['direct_message', 'direct_mention', 'mentio
 	console.log(lng);
 	
 	var extServerOptions = {
-		host: 'geofutbol.azurewebsites.net',
+		host: 'xxx.azurewebsites.net',
 		path: '/api/canchas/getCahchas/'+ lat +'/'+ lng +'/1',
 		method: 'GET'
 	};
